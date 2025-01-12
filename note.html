@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Hover Animation</title>
+  <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+
+.text-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+}
+
+
+.hover-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.hover-text:hover {
+    transform: scale(1.1);
+    color: #ff5722;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hover-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hover-text {
+        font-size: 16px;
+    }
+}
+.not{
+    text-decoration-color: none;
+    text-decoration-line: none;
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-box">
+            <p class="hover-text"><a href="https://drive.google.com/file/d/1pbIXw62t2XSil-tqV_BZVRRCa7Ug9XEq/view?usp=sharing" class="not">here note</a></p>
+        </div>
+    </div>
+</body>
+</html>
